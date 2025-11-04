@@ -7,73 +7,92 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Nested HTML Tables</h1>
-<p class="lead">Your task is to create an HTML table layout with multiple nested tables and lists that closely resemble the structure shown in the image:</p>
+      <div class="grid">
+    <table>
+      <tr>
+        <!-- left column (top-left & bottom-left nested tables live here) -->
+        <td style="width:50%;">
+          <!-- NESTED TABLE 2 (index 1) -->
+          <table>
+            <thead>
+              <tr>
+                <th>Nested Table 2</th>
+                <th>Column 1</th>
+                <th>Column 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td style="text-align:center;">abc</td>
+                <td style="text-align:center;">def</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="spacer"></div>
 
-<div class="frame">
-  <!-- MAIN 2×2 GRID -->
-  <table>
-    <tr>
-      <!-- TOP-LEFT: Nested Table 2 -->
-      <td>
-        <div class="title">Nested Table 2</div>
-        <table class="inner" style="width:100%">
-          <tr>
-            <th style="text-align:center;">Column 1</th>
-            <th style="text-align:center;">Column 2</th>
-          </tr>
-          <tr>
-            <td style="text-align:center;">abc</td>
-            <td style="text-align:center;">def</td>
-          </tr>
-        </table>
-        <div class="spacer"></div>
-      </td>
+          <!-- NESTED TABLE 3 (index 3) -->
+          <table>
+            <thead>
+              <tr>
+                <th>Nested Table 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <table style="width:100%;">
+                    <tr>
+                      <td style="text-align:center;"><a href="#" onclick="return false;">Nested Table</a></td>
+                      <td style="text-align:center;">Demo Continued</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
 
-      <!-- TOP-RIGHT: Nested Table 1 (list) -->
-      <td>
-        <div class="title">Nested Table 1</div>
-        <table class="inner" style="width:100%">
-          <tr>
-            <td class="list-box">
-              <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
-                <li>List item 3</li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-        <div class="spacer"></div>
-      </td>
-    </tr>
+        <!-- right column (top-right & bottom-right nested tables live here) -->
+        <td style="width:50%;">
+          <!-- NESTED TABLE 1 (index 2) -->
+          <table>
+            <thead>
+              <tr>
+                <th>Nested Table 1</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ul style="margin:0 24px;">
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="spacer"></div>
 
-    <tr>
-      <!-- BOTTOM-LEFT: Nested Table 3 with link + text -->
-      <td>
-        <div class="title">Nested Table 3</div>
-        <table class="inner" style="width:100%">
-          <tr>
-            <td style="text-align:center;">
-              <a href="#" onclick="return false;">Nested Table</a>
-            </td>
-            <td style="text-align:center;">Demo Continued</td>
-          </tr>
-        </table>
-      </td>
-
-      <!-- BOTTOM-RIGHT: Nested Table 4 with black HTML cell -->
-      <td>
-        <div class="title">Nested Table 4</div>
-        <table class="inner" style="width:100%">
-          <tr>
-            <td class="html-cell">HTML</td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-</div>
+          <!-- NESTED TABLE 4 (index 4) -->
+          <table>
+            <thead>
+              <tr>
+                <th>Nested Table 4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="black">HTML</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
 
   </body>
 </html>
