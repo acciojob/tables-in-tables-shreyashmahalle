@@ -1,2 +1,38 @@
 
 /* Your CSS Code here. */
+body{font-family: Georgia, serif; background:#fafafa; padding:24px; color:#111;}
+  h1{margin:0 0 6px;}
+  .lead{margin:0 0 18px; color:#444}
+
+  /* Main frame (like the mock) */
+  .frame{
+    border:3px solid #222; padding:10px; background:#fff;
+    max-width: 980px;
+  }
+
+  /* Base table look */
+  table{border-collapse:collapse; width:100%;}
+  td, th{border:3px solid #222; padding:8px; vertical-align:top;}
+
+  /* Title bars inside nested tables */
+  .title{
+    font-weight:700; text-align:center; background:#e5e5e5;
+    border:3px solid #222; padding:6px 0; margin:0 0 8px;
+  }
+
+  /* Inner cells subtle borders like the sample */
+  .inner td, .inner th{border:3px solid #222; padding:8px;}
+
+  /* List panel look */
+  .list-box{padding:10px;}
+  ul{margin:0 24px;}
+  li{margin:6px 0;}
+
+  /* Black HTML cell */
+  .html-cell{
+    background:#000; color:#fff; font-weight:700; text-align:center;
+    padding:14px 0;
+  }
+
+  /* Spacer cells to mimic tall layout */
+  .spacer{height:160px;}

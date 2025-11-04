@@ -7,8 +7,73 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <table style="width: 100%; height: 100%">
-      <!-- Your code here -->
-    </table>
+    <h1>Nested HTML Tables</h1>
+<p class="lead">Your task is to create an HTML table layout with multiple nested tables and lists that closely resemble the structure shown in the image:</p>
+
+<div class="frame">
+  <!-- MAIN 2×2 GRID -->
+  <table>
+    <tr>
+      <!-- TOP-LEFT: Nested Table 2 -->
+      <td>
+        <div class="title">Nested Table 2</div>
+        <table class="inner" style="width:100%">
+          <tr>
+            <th style="text-align:center;">Column 1</th>
+            <th style="text-align:center;">Column 2</th>
+          </tr>
+          <tr>
+            <td style="text-align:center;">abc</td>
+            <td style="text-align:center;">def</td>
+          </tr>
+        </table>
+        <div class="spacer"></div>
+      </td>
+
+      <!-- TOP-RIGHT: Nested Table 1 (list) -->
+      <td>
+        <div class="title">Nested Table 1</div>
+        <table class="inner" style="width:100%">
+          <tr>
+            <td class="list-box">
+              <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <div class="spacer"></div>
+      </td>
+    </tr>
+
+    <tr>
+      <!-- BOTTOM-LEFT: Nested Table 3 with link + text -->
+      <td>
+        <div class="title">Nested Table 3</div>
+        <table class="inner" style="width:100%">
+          <tr>
+            <td style="text-align:center;">
+              <a href="#" onclick="return false;">Nested Table</a>
+            </td>
+            <td style="text-align:center;">Demo Continued</td>
+          </tr>
+        </table>
+      </td>
+
+      <!-- BOTTOM-RIGHT: Nested Table 4 with black HTML cell -->
+      <td>
+        <div class="title">Nested Table 4</div>
+        <table class="inner" style="width:100%">
+          <tr>
+            <td class="html-cell">HTML</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
   </body>
 </html>
