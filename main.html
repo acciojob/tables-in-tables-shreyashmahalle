@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-      <div class="grid">
+<div class="frame">
     <table>
       <tr>
-        <!-- left column (top-left & bottom-left nested tables live here) -->
+        <!-- LEFT COLUMN: Nested Table 2 + 3 -->
         <td style="width:50%;">
           <!-- NESTED TABLE 2 (index 1) -->
           <table>
@@ -29,9 +29,10 @@
               </tr>
             </tbody>
           </table>
+
           <div class="spacer"></div>
 
-          <!-- NESTED TABLE 3 (index 3) -->
+          <!-- NESTED TABLE 3 (index 3) — NO extra inner table -->
           <table>
             <thead>
               <tr>
@@ -41,19 +42,17 @@
             <tbody>
               <tr>
                 <td>
-                  <table style="width:100%;">
-                    <tr>
-                      <td style="text-align:center;"><a href="#" onclick="return false;">Nested Table</a></td>
-                      <td style="text-align:center;">Demo Continued</td>
-                    </tr>
-                  </table>
+                  <div style="display:flex; gap:12px; justify-content:space-between;">
+                    <span><a href="#" onclick="return false;">Nested Table</a></span>
+                    <span>Demo Continued</span>
+                  </div>
                 </td>
               </tr>
             </tbody>
           </table>
         </td>
 
-        <!-- right column (top-right & bottom-right nested tables live here) -->
+        <!-- RIGHT COLUMN: Nested Table 1 + 4 -->
         <td style="width:50%;">
           <!-- NESTED TABLE 1 (index 2) -->
           <table>
@@ -74,6 +73,7 @@
               </tr>
             </tbody>
           </table>
+
           <div class="spacer"></div>
 
           <!-- NESTED TABLE 4 (index 4) -->
@@ -93,6 +93,5 @@
       </tr>
     </table>
   </div>
-
   </body>
 </html>

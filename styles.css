@@ -4,7 +4,7 @@
     table { border-collapse: collapse; width: 100%; }
     td, th { border: 3px solid #111; padding: 8px; vertical-align: top; }
     thead th { background:#e6e6e6; text-align:center; font-weight:700; }
-    /* purely visual spacing to resemble the sample */
     .spacer { height: 140px; }
     .black { background:#000; color:#fff; text-align:center; font-weight:700; }
-    .grid { max-width: 980px; margin:auto; border:3px solid #111; padding:8px; background:#fff; }
+    .frame { max-width:980px; margin:auto; border:3px solid #111; padding:8px; background:#fff; }
+  </style>
